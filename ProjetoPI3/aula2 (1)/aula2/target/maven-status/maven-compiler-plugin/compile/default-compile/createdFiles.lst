@@ -1,0 +1,12 @@
+com\aula2\aula2\exception\ProductNotFoundException.class
+com\aula2\aula2\service\ProductService.class
+com\aula2\aula2\exception\GlobalExceptionHandler.class
+com\aula2\aula2\controller\PageController.class
+com\aula2\aula2\dto\ProductRequestDto.class
+com\aula2\aula2\repository\ProductRepository.class
+com\aula2\aula2\Aula2Application.class
+com\aula2\aula2\controller\ProductController.class
+com\aula2\aula2\model\Product.class
+com\aula2\aula2\repository\UsuarioRepository.class
+com\aula2\aula2\model\Usuario.class
+com\aula2\aula2\controller\AuthController.class

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HyperByte – Performance de outro nível</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">H</div>
+    HyperByte
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Início</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#">Hardware</a></li>
+    <li><a href="#ofertas">Ofertas</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="search-bar">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted);flex-shrink:0">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" placeholder="Buscar produtos...">
+    </div>
+    <div class="cart-icon-wrapper">
+      <button class="icon-btn" id="cartBtn" aria-label="Carrinho">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+      </button>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+  <button class="icon-btn" aria-label="Conta" onclick="window.location.href='cadastro.html'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-img">
+    <div class="gpu-placeholder">
+      <svg class="gpu-svg" viewBox="0 0 580 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="60" y="60" width="440" height="200" rx="18" fill="#1a1535" stroke="#7b3fe4" stroke-width="1.5"/>
+        <rect x="78" y="78" width="404" height="164" rx="12" fill="#120f24"/>
+        <circle cx="170" cy="160" r="64" fill="#0d0b1e" stroke="#3d2d6e" stroke-width="1"/>
+        <circle cx="170" cy="160" r="50" fill="#100e20" stroke="#5a3da0" stroke-width="0.8"/>
+        <circle cx="170" cy="160" r="12" fill="#7b3fe4"/>
+        <g transform="rotate(0, 170, 160)">
+          <ellipse cx="170" cy="126" rx="9" ry="28" fill="#2a1e4e"/>
+          <ellipse cx="170" cy="194" rx="9" ry="28" fill="#2a1e4e"/>
+          <ellipse cx="136" cy="160" rx="28" ry="9" fill="#2a1e4e"/>
+          <ellipse cx="204" cy="160" rx="28" ry="9" fill="#2a1e4e"/>
+          <ellipse cx="146" cy="136" rx="10" ry="26" fill="#231840" transform="rotate(45, 146, 136)"/>
+          <ellipse cx="194" cy="136" rx="10" ry="26" fill="#231840" transform="rotate(-45, 194, 136)"/>
+          <ellipse cx="146" cy="184" rx="10" ry="26" fill="#231840" transform="rotate(-45, 146, 184)"/>
+          <ellipse cx="194" cy="184" rx="10" ry="26" fill="#231840" transform="rotate(45, 194, 184)"/>
+        </g>
+        <circle cx="170" cy="160" r="8" fill="#9d5eff"/>
+        <circle cx="330" cy="160" r="64" fill="#0d0b1e" stroke="#3d2d6e" stroke-width="1"/>
+        <circle cx="330" cy="160" r="50" fill="#100e20" stroke="#5a3da0" stroke-width="0.8"/>
+        <circle cx="330" cy="160" r="12" fill="#7b3fe4"/>
+        <g>
+          <ellipse cx="330" cy="126" rx="9" ry="28" fill="#2a1e4e"/>
+          <ellipse cx="330" cy="194" rx="9" ry="28" fill="#2a1e4e"/>
+          <ellipse cx="296" cy="160" rx="28" ry="9" fill="#2a1e4e"/>
+          <ellipse cx="364" cy="160" rx="28" ry="9" fill="#2a1e4e"/>
+          <ellipse cx="306" cy="136" rx="10" ry="26" fill="#231840" transform="rotate(45, 306, 136)"/>
+          <ellipse cx="354" cy="136" rx="10" ry="26" fill="#231840" transform="rotate(-45, 354, 136)"/>
+          <ellipse cx="306" cy="184" rx="10" ry="26" fill="#231840" transform="rotate(-45, 306, 184)"/>
+          <ellipse cx="354" cy="184" rx="10" ry="26" fill="#231840" transform="rotate(45, 354, 184)"/>
+        </g>
+        <circle cx="330" cy="160" r="8" fill="#9d5eff"/>
+        <rect x="60" y="60" width="440" height="12" rx="4" fill="url(#rgbGrad)"/>
+        <rect x="420" y="80" width="6" height="160" rx="2" fill="#1e1838"/>
+        <rect x="432" y="80" width="6" height="160" rx="2" fill="#1e1838"/>
+        <rect x="444" y="80" width="6" height="160" rx="2" fill="#1e1838"/>
+        <rect x="456" y="80" width="6" height="160" rx="2" fill="#1e1838"/>
+        <rect x="120" y="252" width="300" height="16" rx="3" fill="#0a0817"/>
+        <rect x="130" y="255" width="20" height="10" rx="2" fill="#1a1030"/>
+        <rect x="158" y="255" width="20" height="10" rx="2" fill="#1a1030"/>
+        <rect x="186" y="255" width="20" height="10" rx="2" fill="#1a1030"/>
+        <rect x="214" y="255" width="20" height="10" rx="2" fill="#1a1030"/>
+        <rect x="242" y="255" width="20" height="10" rx="2" fill="#1a1030"/>
+        <rect x="460" y="100" width="40" height="30" rx="4" fill="#0e0c1e" stroke="#3d2d6e" stroke-width="1"/>
+        <rect x="460" y="142" width="40" height="30" rx="4" fill="#0e0c1e" stroke="#3d2d6e" stroke-width="1"/>
+        <text x="106" y="108" font-family="Rajdhani" font-size="11" font-weight="700" fill="#7b3fe4" letter-spacing="2">RTX 4090</text>
+        <text x="106" y="122" font-family="Barlow" font-size="8" fill="#5a4880">PHANTOM EDITION</text>
+        <defs>
+          <linearGradient id="rgbGrad" x1="0" y1="0" x2="440" y2="0">
+            <stop offset="0%" stop-color="#7b3fe4"/>
+            <stop offset="33%" stop-color="#ff4d6d"/>
+            <stop offset="66%" stop-color="#2dff8e"/>
+            <stop offset="100%" stop-color="#7b3fe4"/>
+          </linearGradient>
+        </defs>
+        <line x1="80" y1="72" x2="200" y2="72" stroke="#9d5eff" stroke-width="0.5" opacity="0.5"/>
+        <line x1="220" y1="72" x2="460" y2="72" stroke="#9d5eff" stroke-width="0.5" opacity="0.3"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Novidades 2026
+    </div>
+    <h1 class="hero-title">
+      Performance de<br>
+      <span>outro nível</span>
+    </h1>
+    <p class="hero-sub">O hardware do amanhã, disponível hoje. Upgrade seu setup com as melhores peças do mercado.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollTo('produtos')">Ver Produtos</button>
+      <button class="btn-ghost" onclick="scrollTo('ofertas')">Ofertas</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORIES ── -->
+<section class="categories" id="categorias">
+  <h2 class="section-title">Explore por <span>Categoria</span></h2>
+  <div class="cats-grid">
+    <a href="#" class="cat-card">
+      <div class="cat-icon">🖥️</div>
+      <span class="cat-label">Placas de Vídeo</span>
+    </a>
+    <a href="#" class="cat-card">
+      <div class="cat-icon">⚙️</div>
+      <span class="cat-label">Processadores</span>
+    </a>
+    <a href="#" class="cat-card">
+      <div class="cat-icon">💾</div>
+      <span class="cat-label">Memórias RAM</span>
+    </a>
+    <a href="#" class="cat-card">
+      <div class="cat-icon">💿</div>
+      <span class="cat-label">SSD &amp; Armazenamento</span>
+    </a>
+    <a href="#" class="cat-card">
+      <div class="cat-icon">🎮</div>
+      <span class="cat-label">Periféricos Gamer</span>
+    </a>
+    <a href="#" class="cat-card">
+      <div class="cat-icon">🗄️</div>
+      <span class="cat-label">Gabinetes</span>
+    </a>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── PRODUTOS EM DESTAQUE ── -->
+<section class="products-section" id="produtos">
+  <h2 class="section-title" style="text-align:left;margin-bottom:40px;">Produtos em <span>Destaque</span></h2>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- ── OFERTAS ESPECIAIS ── -->
+<section class="ofertas-section" id="ofertas">
+  <div class="ofertas-header">
+    <h2 class="ofertas-title">🔥 Ofertas <span>Especiais</span></h2>
+    <div class="timer-badge">
+      ⏱ Tempo Limitado:
+      <span class="timer-display" id="timer">02:47:33</span>
+    </div>
+  </div>
+  <div class="products-grid" id="ofertasGrid"></div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo" style="text-decoration:none;">
+        <div class="logo-icon">H</div>
+        HyperByte
+      </a>
+      <p>O hardware do amanhã, disponível hoje. Performance de outro nível para gamers e profissionais.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">tw</a>
+        <a href="#" class="social-btn">yt</a>
+        <a href="#" class="social-btn">dc</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Trocas e Devoluções</a></li>
+        <li><a href="#">Rastrear Pedido</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p style="color:var(--muted);font-size:0.85rem;line-height:1.6;">Receba ofertas exclusivas e novidades.</p>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="seu@email.com">
+        <button class="btn-newsletter">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 HyperByte. Todos os direitos reservados.</p>
+    <p>CNPJ: 00.000.000/0001-00</p>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="cart-toast" id="toast">
+  ✓ Produto adicionado ao carrinho!
+</div>
+
+<!-- CART OVERLAY -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- CART DRAWER -->
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+  <div class="cart-header">
+    <div class="cart-header-left">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+      <h3>Carrinho</h3>
+      <span class="cart-count-badge" id="cartCount">0 itens</span>
+    </div>
+    <button class="cart-close" id="cartCloseBtn" aria-label="Fechar carrinho">✕</button>
+  </div>
+
+  <div class="cart-list" id="cartList"></div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-value"><span>R$</span><span id="cartTotal">0,00</span></span>
+    </div>
+    <button class="btn-checkout" id="cartCheckoutBtn">Finalizar Compra</button>
+    <button class="btn-clear" id="cartClearBtn">Limpar Carrinho</button>
+  </div>
+</aside>
+
+<script src="js/script.js"></script>
+</body>
+</html>

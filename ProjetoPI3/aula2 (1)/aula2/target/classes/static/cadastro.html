@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acesso — NexusStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="auth-wrapper">
+    <a class="auth-logo" href="index.html">
+      <div class="logo-hex">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="13 2 20 7 20 17 10 22 0 17 0 7 7 2"></polyline>
+          <line x1="10" y1="22" x2="10" y2="12"></line>
+          <line x1="20" y1="7" x2="10" y2="12"></line>
+          <line x1="0" y1="7" x2="10" y2="12"></line>
+        </svg>
+      </div>
+      <span class="logo-name">HYPERBYTE</span>
+    </a>
+
+    <div class="auth-card">
+      <div class="auth-tabs">
+        <button class="tab-btn active" id="tab-login">Entrar</button>
+        <button class="tab-btn" id="tab-register">Cadastrar</button>
+      </div>
+
+      <div class="auth-panels">
+        <div class="auth-panel active" id="panel-login">
+          <form id="form-login">
+            <div class="field">
+              <label class="field-label">E-mail</label>
+              <div class="field-wrap">
+                <input class="field-input" type="email" id="login-email" placeholder="seu@email.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label">Senha</label>
+              <div class="field-wrap">
+                <input class="field-input" type="password" id="login-password" placeholder="••••••••" required />
+                <button type="button" class="toggle-pw" data-target="login-password">
+                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="btn-submit"><span class="btn-text">Entrar na conta</span></button>
+          </form>
+        </div>
+
+        <div class="auth-panel" id="panel-register">
+          <form id="form-register">
+            <div class="fields-row">
+              <div class="field">
+                <label class="field-label">Nome</label>
+                <input class="field-input" type="text" id="reg-first" placeholder="João" required />
+              </div>
+              <div class="field">
+                <label class="field-label">Sobrenome</label>
+                <input class="field-input" type="text" id="reg-last" placeholder="Silva" required />
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label">E-mail</label>
+              <input class="field-input" type="email" id="reg-email" placeholder="seu@email.com" required />
+            </div>
+            <div class="field">
+              <label class="field-label">Senha</label>
+              <div class="field-wrap">
+                <input class="field-input" type="password" id="reg-password" placeholder="Mínimo 8 caracteres" required />
+                <button type="button" class="toggle-pw" data-target="reg-password">
+                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <div class="pw-strength">
+                <div class="pw-bars">
+                  <div class="pw-bar" id="bar1"></div><div class="pw-bar" id="bar2"></div>
+                  <div class="pw-bar" id="bar3"></div><div class="pw-bar" id="bar4"></div>
+                </div>
+                <span class="pw-label" id="pw-label">Digite uma senha</span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label">Confirmar Senha</label>
+              <div class="field-wrap">
+                <input class="field-input" type="password" id="reg-confirm" placeholder="Repita a senha" required />
+                <button type="button" class="toggle-pw" data-target="reg-confirm">
+                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="btn-submit"><span class="btn-text">Criar minha conta</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="auth-footer">
+        <span id="footer-text">Não tem conta? <a href="#" id="link-go-register">Cadastre-se</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
