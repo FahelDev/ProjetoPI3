@@ -1,5 +1,5 @@
 Projeto PI 3º Semestre - Projeto Integrador – HyperByte
-📌 Sobre o Projeto
+# 📌 Sobre o Projeto
 
 Este projeto foi desenvolvido para o Projeto Integrador (PI) utilizando o framework Spring Boot.
 A aplicação tem como objetivo simular uma loja virtual, integrando funcionalidades de autenticação de usuários com banco de dados.
