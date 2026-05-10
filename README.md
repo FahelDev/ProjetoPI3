@@ -12,11 +12,12 @@ Atualmente, o sistema ainda está em desenvolvimento e possui as seguintes funci
 - Integração com banco de dados H2
 
 # 🚀 Tecnologias Utilizadas
-- Back-end
+Back-end:
 - Spring Boot
 - Java
 - Banco de dados H2
-- Front-end
+  
+Front-end:
 - HTML
 - CSS
 - JavaScript
